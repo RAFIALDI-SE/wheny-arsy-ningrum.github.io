@@ -3,245 +3,802 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wheny Arsi Ningrum - Civil Engineering Portfolio</title>
-    <link rel="stylesheet" href="app.css" />
+
+    <meta
+      name="description"
+      content="Portfolio Wheny Arsi Ningrum - Civil Engineering"
+    />
+
+    <title>Wheny Arsi Ningrum | Civil Engineering Portfolio</title>
+
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons" defer></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="app.css" />
   </head>
+
   <body>
-    <!-- HEADER -->
-    <header id="header" class="fade-in">
-      <h1>Wheny Arsi</h1>
-      <nav>
+    <!-- =====================================================
+       PAGE LOADER
+  ====================================================== -->
+    <div class="page-loader">
+      <div class="loader-inner">
+        <div class="loader-ring"></div>
+        <span>WA</span>
+      </div>
+      <p>Loading Portfolio...</p>
+    </div>
+
+    <!-- =====================================================
+       BACKGROUND DECORATION
+  ====================================================== -->
+
+    <div class="background-grid"></div>
+
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="ambient ambient-three"></div>
+
+    <!-- =====================================================
+       SCROLL PROGRESS
+  ====================================================== -->
+
+    <div class="scroll-progress">
+      <span id="scroll-progress-bar"></span>
+    </div>
+
+    <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+    <header id="header">
+      <a href="#home" class="logo">
+        <span class="logo-mark">WA</span>
+
+        <span class="logo-text">
+          <strong>Wheny</strong>
+          <small>Civil Engineering</small>
+        </span>
+      </a>
+
+      <nav id="main-nav">
         <a href="#about">Tentang</a>
         <a href="#experience">Pengalaman</a>
         <a href="#skills">Keahlian</a>
         <a href="#certificates">Sertifikat</a>
         <a href="#contact">Kontak</a>
       </nav>
-      <a href="CV - WHENY ARSI NINGRUM.pdf" target="_blank" class="download-btn"
-        >Unduh CV</a
-      >
+
+      <div class="header-actions">
+        <a
+          href="CV - WHENY ARSI NINGRUM.pdf"
+          target="_blank"
+          class="download-btn"
+        >
+          <i data-feather="download"></i>
+          <span>Unduh CV</span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Buka menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
 
+    <!-- =====================================================
+       MAIN
+  ====================================================== -->
+
     <main>
-      <!-- SECTION HOME -->
-      <section id="home">
-        <div class="home-feature slide-in-left">
-          <p class="greeting">Halo, saya</p>
-          <h2 class="typing-text">CIVIL <span>ENGINEER</span></h2>
-          <p class="home-desc">
-            Lulusan S1 Teknik Sipil Universitas Muhammadiyah Malang dengan IPK
-            3.68, berfokus pada perencanaan konstruksi, analisis struktur, dan
-            manajemen proyek[cite: 1].
-          </p>
-          <div class="home-link">
-            <a href="https://linkedin.com" target="_blank" title="LinkedIn"
-              ><i data-feather="linkedin"></i
-            ></a>
-            <a href="https://instagram.com" target="_blank" title="Instagram"
-              ><i data-feather="instagram"></i
-            ></a>
-            <a href="mailto:whenyarsi@gmail.com" title="Email"
-              ><i data-feather="mail"></i
-            ></a>
-          </div>
-        </div>
-        <div class="home-img slide-in-right">
-          <!-- Masukkan foto Anda ke dalam folder images dengan nama profile.jpg -->
-          <img
-            src="images/profile.jpg"
-            alt="Wheny Arsi Ningrum"
-            onerror="
-              this.src =
-                'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80'
-            "
-          />
-        </div>
-      </section>
+      <!-- ===================================================
+         HERO
+    ==================================================== -->
 
-      <!-- SECTION ABOUT -->
-      <section id="about" class="section-card-container reveal">
-        <h3 class="section-title">Tentang Saya</h3>
-        <div class="about-content transparent-card fade-in">
-          <p>
-            Lulusan S1 Teknik Sipil yang memiliki pemahaman dasar mengenai
-            perencanaan konstruksi, analisis struktur, dan manajemen proyek
-            berdasarkan pembelajaran selama perkuliahan di Universitas
-            Muhammadiyah Malang[cite: 1]. Menguasai berbagai software teknik
-            sipil[cite: 1].
-          </p>
-          <p>
-            Memiliki kemampuan belajar yang cepat, teliti, disiplin, mampu
-            bekerja sama dalam tim, serta siap mengembangkan kompetensi dan
-            memberikan kontribusi di lingkungan kerja profesional[cite: 1].
-          </p>
-        </div>
-      </section>
+      <section id="home" class="hero-section">
+        <div class="hero-content">
+          <div class="hero-text reveal-left">
+            <div class="availability">
+              <span class="status-dot"></span>
+              <span>Open to Opportunities</span>
+            </div>
 
-      <!-- SECTION EXPERIENCE -->
-      <section id="experience" class="section-card-container reveal">
-        <h3 class="section-title">Pengalaman Magang & Akademik</h3>
-        <div class="timeline-grid">
-          <div class="transparent-card fade-in">
-            <h4>Staff TU Jurusan</h4>
-            <span class="place">Universitas Muhammadiyah Malang</span>
-            <span class="date">Juli 2026 - Agustus 2026</span>
-            <p>
-              Mengelola administrasi, pengarsipan dokumen, pengolahan data
-              akademik mahasiswa, serta berkoordinasi dengan dosen dan
-              mahasiswa[cite: 1].
-            </p>
-          </div>
-          <div class="transparent-card fade-in">
-            <h4>Asisten Dosen Perkerasan Jalan</h4>
-            <span class="place">Universitas Muhammadiyah Malang</span>
-            <span class="date">Februari 2026 - Juli 2026</span>
-            <p>
-              Membimbing mahasiswa dalam perhitungan perencanaan perkerasan
-              jalan, asistensi analisis data, dan pengecekan hasil tugas[cite:
-              1].
-            </p>
-          </div>
-          <div class="transparent-card fade-in">
-            <h4>Asisten Lab MS Project</h4>
-            <span class="place">Universitas Muhammadiyah Malang</span>
-            <span class="date">Februari 2026 - Juli 2026</span>
-            <p>
-              Membimbing penyusunan jadwal dan manajemen proyek konstruksi
-              menggunakan Microsoft Project, input aktivitas, durasi, hingga
-              resource[cite: 1].
-            </p>
-          </div>
-          <div class="transparent-card fade-in">
-            <h4>Tim Proyek Pemeliharaan Air Bersih</h4>
-            <span class="place">DPUPRPKP Kota Malang</span>
-            <span class="date">Agustus 2025 - September 2025</span>
-            <p>
-              Membantu pemantauan pekerjaan pemeliharaan jaringan air bersih,
-              observasi fasilitas, identifikasi kebutuhan, dan dokumentasi
-              laporan lapangan[cite: 1].
-            </p>
-          </div>
-          <div class="transparent-card fade-in">
-            <h4>Asisten Laboratorium Hidrolika</h4>
-            <span class="place">Universitas Muhammadiyah Malang</span>
-            <span class="date">November 2024 - Januari 2025</span>
-            <p>
-              Mempersiapkan alat, mengawasi pengujian praktikum hidrolika, serta
-              membantu pengolahan data hasil praktikum sesuai prosedur
-              keselamatan[cite: 1, 2].
-            </p>
-          </div>
-        </div>
-      </section>
+            <p class="eyebrow">PORTFOLIO / CIVIL ENGINEERING</p>
 
-      <!-- SECTION SKILLS -->
-      <section id="skills" class="section-card-container reveal">
-        <h3 class="section-title">Keahlian & Bahasa</h3>
-        <div class="skill-grid">
-          <div class="skill-card transparent-card fade-in">
-            <i data-feather="pen-tool"></i>
-            <h4>AutoCAD</h4>
-            <p>Membuat dan membaca gambar teknik konstruksi secara presisi.</p>
-          </div>
-          <div class="skill-card transparent-card fade-in">
-            <i data-feather="cpu"></i>
-            <h4>Microsoft Office & Project</h4>
-            <p>Word, Excel, serta penjadwalan & manajemen proyek[cite: 2].</p>
-          </div>
-          <div class="skill-card transparent-card fade-in">
-            <i data-feather="layers"></i>
-            <h4>Estimasi Pekerjaan</h4>
-            <p>
-              Menghitung dan memperkirakan volume pekerjaan konstruksi[cite: 2].
-            </p>
-          </div>
-          <div class="skill-card transparent-card fade-in">
-            <i data-feather="globe"></i>
-            <h4>Bahasa</h4>
-            <p>Indonesia (Aktif), Inggris (Pasif)[cite: 2].</p>
-          </div>
-        </div>
-      </section>
+            <h1>
+              Wheny Arsi
+              <span>Ningrum</span>
+            </h1>
 
-      <!-- SECTION CERTIFICATES -->
-      <section id="certificates" class="section-card-container reveal">
-        <h3 class="section-title">Sertifikat</h3>
-        <div class="cert-grid">
-          <div class="transparent-card fade-in cert-card">
-            <div class="cert-icon"><i data-feather="award"></i></div>
-            <h4>AutoCAD Dasar dan Menengah</h4>
-            <p>
-              Sertifikasi keahlian pengoperasian software AutoCAD untuk
-              perancangan teknik sipil[cite: 2].
+            <div class="hero-role">
+              <span class="role-line"></span>
+
+              <span id="typing-role"> Civil Engineer </span>
+            </div>
+
+            <p class="hero-description">
+              Lulusan S1 Teknik Sipil Universitas Muhammadiyah Malang dengan IPK
+              <strong>3,68</strong>, memiliki pemahaman dasar dalam perencanaan
+              konstruksi, analisis struktur, dan manajemen proyek.
             </p>
-            <div class="cert-links">
+
+            <div class="hero-buttons">
+              <a href="#experience" class="primary-btn">
+                <span>Lihat Pengalaman</span>
+                <i data-feather="arrow-down-right"></i>
+              </a>
+
+              <a
+                href="CV - WHENY ARSI NINGRUM.pdf"
+                target="_blank"
+                class="secondary-btn"
+              >
+                <i data-feather="file-text"></i>
+                <span>Lihat CV</span>
+              </a>
+            </div>
+
+            <div class="hero-meta">
+              <div>
+                <strong>3.68</strong>
+                <span>IPK</span>
+              </div>
+
+              <div class="meta-divider"></div>
+
+              <div>
+                <strong>2022</strong>
+                <span>Mulai Studi</span>
+              </div>
+
+              <div class="meta-divider"></div>
+
+              <div>
+                <strong>UMM</strong>
+                <span>Universitas</span>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="mailto:whenyarsi@gmail.com" aria-label="Email">
+                <i data-feather="mail"></i>
+              </a>
+
               <a
                 href="https://linkedin.com"
                 target="_blank"
-                class="cert-link-btn"
-                ><i data-feather="linkedin"></i> LinkedIn</a
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
               >
+                <i data-feather="linkedin"></i>
+              </a>
+
               <a
                 href="https://instagram.com"
                 target="_blank"
-                class="cert-link-btn ig"
-                ><i data-feather="instagram"></i> Instagram</a
+                rel="noopener noreferrer"
+                aria-label="Instagram"
               >
+                <i data-feather="instagram"></i>
+              </a>
             </div>
           </div>
-          <div class="transparent-card fade-in cert-card">
-            <div class="cert-icon"><i data-feather="award"></i></div>
-            <h4>Revit Architecture</h4>
-            <p>
-              Sertifikasi pemodelan informasi bangunan (BIM) menggunakan Revit
-              Architecture[cite: 2].
+
+          <!-- HERO VISUAL -->
+
+          <div class="hero-visual reveal-right">
+            <div class="engineering-frame">
+              <div class="frame-top">
+                <span>PROJECT / 01</span>
+
+                <span class="frame-status">
+                  <span></span>
+                  PORTFOLIO
+                </span>
+              </div>
+
+              <div class="image-wrapper">
+                <div class="image-glow"></div>
+
+                <img src="images/profile.PNG" alt="Foto Wheny Arsi Ningrum" />
+
+                <div class="image-overlay"></div>
+              </div>
+
+              <div class="frame-bottom">
+                <div>
+                  <span>FIELD</span>
+                  <strong>CIVIL ENGINEERING</strong>
+                </div>
+
+                <div>
+                  <span>LOCATION</span>
+                  <strong>JAWA TIMUR</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Cards -->
+
+            <div class="floating-card floating-card-one">
+              <div class="floating-icon">
+                <i data-feather="layers"></i>
+              </div>
+
+              <div>
+                <span>Focus</span>
+                <strong>Construction</strong>
+              </div>
+            </div>
+
+            <div class="floating-card floating-card-two">
+              <div class="floating-icon cyan">
+                <i data-feather="compass"></i>
+              </div>
+
+              <div>
+                <span>Experience</span>
+                <strong>Academic & Field</strong>
+              </div>
+            </div>
+
+            <div class="blueprint-circle">
+              <span>01</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll indicator -->
+
+        <a href="#about" class="scroll-indicator">
+          <span>SCROLL TO EXPLORE</span>
+
+          <div class="scroll-line">
+            <span></span>
+          </div>
+        </a>
+      </section>
+
+      <!-- ===================================================
+         ABOUT
+    ==================================================== -->
+
+      <section id="about" class="content-section">
+        <div class="section-heading reveal">
+          <div class="section-number">01</div>
+
+          <div>
+            <span class="section-label"> PROFILE </span>
+
+            <h2>Tentang <span>Saya</span></h2>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-main glass-card reveal-left">
+            <span class="quote-mark">“</span>
+
+            <p class="about-lead">
+              Lulusan S1 Teknik Sipil yang memiliki pemahaman dasar mengenai
+              <strong
+                >perencanaan konstruksi, analisis struktur, dan manajemen
+                proyek.</strong
+              >
             </p>
-            <div class="cert-links">
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                class="cert-link-btn"
-                ><i data-feather="linkedin"></i> LinkedIn</a
-              >
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                class="cert-link-btn ig"
-                ><i data-feather="instagram"></i> Instagram</a
-              >
+
+            <p>
+              Pemahaman tersebut diperoleh melalui proses pembelajaran selama
+              perkuliahan di Universitas Muhammadiyah Malang serta pengalaman
+              akademik dan kegiatan lapangan.
+            </p>
+
+            <p>
+              Memiliki kemampuan belajar yang cepat, teliti, disiplin, mampu
+              bekerja sama dalam tim, serta memiliki semangat untuk terus
+              mengembangkan kompetensi dan memberikan kontribusi di lingkungan
+              kerja profesional.
+            </p>
+          </div>
+
+          <div class="about-side">
+            <div class="info-card glass-card reveal">
+              <div class="info-icon">
+                <i data-feather="book-open"></i>
+              </div>
+
+              <div>
+                <span>Pendidikan</span>
+                <strong>S1 Teknik Sipil</strong>
+                <small> Universitas Muhammadiyah Malang </small>
+              </div>
+            </div>
+
+            <div class="info-card glass-card reveal">
+              <div class="info-icon">
+                <i data-feather="award"></i>
+              </div>
+
+              <div>
+                <span>Academic Achievement</span>
+                <strong>IPK 3,68 / 4,00</strong>
+                <small> Periode studi 2022 - 2026 </small>
+              </div>
+            </div>
+
+            <div class="info-card glass-card reveal">
+              <div class="info-icon">
+                <i data-feather="map-pin"></i>
+              </div>
+
+              <div>
+                <span>Domisili</span>
+                <strong>Jombang</strong>
+                <small> Jawa Timur, Indonesia </small>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- SECTION CONTACT -->
-      <section id="contact" class="section-card-container reveal">
-        <h3 class="section-title">Hubungi Saya</h3>
-        <div class="contact-card transparent-card fade-in">
-          <p class="contact-info-text">
-            Terbuka untuk peluang karir, kolaborasi, atau posisi profesional di
-            bidang Teknik Sipil.
+      <!-- ===================================================
+         EXPERIENCE
+    ==================================================== -->
+
+      <section id="experience" class="content-section experience-section">
+        <div class="section-heading reveal">
+          <div class="section-number">02</div>
+
+          <div>
+            <span class="section-label"> EXPERIENCE </span>
+
+            <h2>Pengalaman <span>Profesional</span></h2>
+          </div>
+        </div>
+
+        <div class="experience-list">
+          <!-- EXPERIENCE 01 -->
+
+          <article class="experience-item reveal">
+            <div class="experience-index">01</div>
+
+            <div class="experience-date">
+              <span>JUL 2026</span>
+              <span>AGO 2026</span>
+            </div>
+
+            <div class="experience-content">
+              <div class="experience-top">
+                <div>
+                  <span class="experience-type"> ADMINISTRATION </span>
+
+                  <h3>Staff TU Jurusan</h3>
+
+                  <p class="company">Universitas Muhammadiyah Malang</p>
+                </div>
+
+                <i data-feather="arrow-up-right"></i>
+              </div>
+
+              <p>
+                Mengelola administrasi dan pengarsipan dokumen jurusan, membantu
+                pengolahan data akademik dan administrasi mahasiswa, serta
+                berkoordinasi dengan mahasiswa, dosen, dan pihak terkait.
+              </p>
+            </div>
+          </article>
+
+          <!-- EXPERIENCE 02 -->
+
+          <article class="experience-item reveal">
+            <div class="experience-index">02</div>
+
+            <div class="experience-date">
+              <span>FEB 2026</span>
+              <span>JUL 2026</span>
+            </div>
+
+            <div class="experience-content">
+              <div class="experience-top">
+                <div>
+                  <span class="experience-type"> ACADEMIC </span>
+
+                  <h3>Asisten Dosen Perkerasan Jalan</h3>
+
+                  <p class="company">Universitas Muhammadiyah Malang</p>
+                </div>
+
+                <i data-feather="arrow-up-right"></i>
+              </div>
+
+              <p>
+                Membantu mahasiswa memahami dan menyelesaikan perhitungan
+                perencanaan perkerasan jalan, memberikan asistensi analisis
+                data, memeriksa hasil perhitungan, serta memberikan arahan dalam
+                penyelesaian tugas.
+              </p>
+            </div>
+          </article>
+
+          <!-- EXPERIENCE 03 -->
+
+          <article class="experience-item reveal">
+            <div class="experience-index">03</div>
+
+            <div class="experience-date">
+              <span>FEB 2026</span>
+              <span>JUL 2026</span>
+            </div>
+
+            <div class="experience-content">
+              <div class="experience-top">
+                <div>
+                  <span class="experience-type"> PROJECT MANAGEMENT </span>
+
+                  <h3>Asisten Laboratorium MS Project</h3>
+
+                  <p class="company">Universitas Muhammadiyah Malang</p>
+                </div>
+
+                <i data-feather="arrow-up-right"></i>
+              </div>
+
+              <p>
+                Membantu mahasiswa dalam praktik penyusunan jadwal dan manajemen
+                proyek konstruksi menggunakan Microsoft Project, termasuk
+                penginputan aktivitas, durasi, predecessor, resource, serta
+                pengecekan tugas praktikum.
+              </p>
+            </div>
+          </article>
+
+          <!-- EXPERIENCE 04 -->
+
+          <article class="experience-item reveal">
+            <div class="experience-index">04</div>
+
+            <div class="experience-date">
+              <span>AGO 2025</span>
+              <span>SEP 2025</span>
+            </div>
+
+            <div class="experience-content">
+              <div class="experience-top">
+                <div>
+                  <span class="experience-type"> FIELD PROJECT </span>
+
+                  <h3>Tim Proyek Pemeliharaan Air Bersih</h3>
+
+                  <p class="company">DPUPRPKP Kota Malang</p>
+                </div>
+
+                <i data-feather="arrow-up-right"></i>
+              </div>
+
+              <p>
+                Membantu pelaksanaan dan pemantauan pekerjaan pemeliharaan
+                jaringan atau sarana air bersih, melakukan observasi kondisi
+                jaringan dan fasilitas, mengidentifikasi kebutuhan pemeliharaan,
+                serta mendokumentasikan progress pekerjaan.
+              </p>
+            </div>
+          </article>
+
+          <!-- EXPERIENCE 05 -->
+
+          <article class="experience-item reveal">
+            <div class="experience-index">05</div>
+
+            <div class="experience-date">
+              <span>NOV 2024</span>
+              <span>JAN 2025</span>
+            </div>
+
+            <div class="experience-content">
+              <div class="experience-top">
+                <div>
+                  <span class="experience-type"> LABORATORY </span>
+
+                  <h3>Asisten Laboratorium Hidrolika</h3>
+
+                  <p class="company">Universitas Muhammadiyah Malang</p>
+                </div>
+
+                <i data-feather="arrow-up-right"></i>
+              </div>
+
+              <p>
+                Membantu pelaksanaan praktikum hidrolika, termasuk persiapan
+                alat, pengujian, pengawasan kegiatan, membimbing penggunaan
+                peralatan laboratorium, serta membantu pencatatan dan pengolahan
+                data hasil praktikum.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===================================================
+         SKILLS
+    ==================================================== -->
+
+      <section id="skills" class="content-section">
+        <div class="section-heading reveal">
+          <div class="section-number">03</div>
+
+          <div>
+            <span class="section-label"> EXPERTISE </span>
+
+            <h2>Keahlian & <span>Kompetensi</span></h2>
+          </div>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skills-intro reveal-left">
+            <span class="mini-label"> TECHNICAL SKILLS </span>
+
+            <h3>
+              Tools yang digunakan untuk mendukung pekerjaan teknik sipil.
+            </h3>
+
+            <p>
+              Memiliki kemampuan dasar dalam penggunaan software dan tools yang
+              mendukung proses perencanaan, dokumentasi, hingga manajemen
+              pekerjaan konstruksi.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-modern glass-card reveal">
+              <div class="skill-number">01</div>
+
+              <div class="skill-icon">
+                <i data-feather="edit-3"></i>
+              </div>
+
+              <h3>AutoCAD</h3>
+
+              <p>Membuat dan membaca gambar teknik konstruksi.</p>
+
+              <div class="skill-line">
+                <span></span>
+              </div>
+            </div>
+
+            <div class="skill-modern glass-card reveal">
+              <div class="skill-number">02</div>
+
+              <div class="skill-icon">
+                <i data-feather="file-text"></i>
+              </div>
+
+              <h3>Microsoft Office</h3>
+
+              <p>
+                Word, Excel, dan Microsoft Project untuk kebutuhan administrasi
+                serta proyek.
+              </p>
+
+              <div class="skill-line">
+                <span></span>
+              </div>
+            </div>
+
+            <div class="skill-modern glass-card reveal">
+              <div class="skill-number">03</div>
+
+              <div class="skill-icon">
+                <i data-feather="bar-chart-2"></i>
+              </div>
+
+              <h3>Estimasi Pekerjaan</h3>
+
+              <p>Menghitung dan memperkirakan volume pekerjaan konstruksi.</p>
+
+              <div class="skill-line">
+                <span></span>
+              </div>
+            </div>
+
+            <div class="skill-modern glass-card reveal">
+              <div class="skill-number">04</div>
+
+              <div class="skill-icon">
+                <i data-feather="compass"></i>
+              </div>
+
+              <h3>Membaca Gambar Teknik</h3>
+
+              <p>Memahami informasi visual dan detail pada gambar teknik.</p>
+
+              <div class="skill-line">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages -->
+
+        <div class="language-section reveal">
+          <div>
+            <span class="mini-label"> LANGUAGE </span>
+
+            <h3>Kemampuan Bahasa</h3>
+          </div>
+
+          <div class="language-list">
+            <div class="language-item">
+              <div class="language-title">
+                <span>Bahasa Indonesia</span>
+                <strong>Aktif</strong>
+              </div>
+
+              <div class="language-bar">
+                <span style="width: 100%"></span>
+              </div>
+            </div>
+
+            <div class="language-item">
+              <div class="language-title">
+                <span>Bahasa Inggris</span>
+                <strong>Pasif</strong>
+              </div>
+
+              <div class="language-bar">
+                <span style="width: 45%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================
+         CERTIFICATES
+    ==================================================== -->
+
+      <section id="certificates" class="content-section">
+        <div class="section-heading reveal">
+          <div class="section-number">04</div>
+
+          <div>
+            <span class="section-label"> CERTIFICATIONS </span>
+
+            <h2>Sertifikat <span>Keahlian</span></h2>
+          </div>
+        </div>
+
+        <div class="certificate-grid">
+          <article class="certificate-card reveal">
+            <div class="certificate-top">
+              <div class="certificate-icon">
+                <i data-feather="award"></i>
+              </div>
+
+              <span>01</span>
+            </div>
+
+            <div class="certificate-body">
+              <span class="certificate-label"> TECHNICAL CERTIFICATE </span>
+
+              <h3>AutoCAD Dasar dan Menengah</h3>
+
+              <p>
+                Sertifikat kompetensi pengoperasian AutoCAD dasar dan menengah
+                yang mendukung kebutuhan perancangan dan gambar teknik.
+              </p>
+            </div>
+
+            <div class="certificate-footer">
+              <span>
+                <i data-feather="check-circle"></i>
+                Certified Skill
+              </span>
+            </div>
+          </article>
+
+          <article class="certificate-card reveal">
+            <div class="certificate-top">
+              <div class="certificate-icon cyan-icon">
+                <i data-feather="box"></i>
+              </div>
+
+              <span>02</span>
+            </div>
+
+            <div class="certificate-body">
+              <span class="certificate-label"> BIM / ARCHITECTURE </span>
+
+              <h3>Revit Architecture</h3>
+
+              <p>
+                Sertifikat terkait pemodelan menggunakan Revit Architecture
+                sebagai bagian dari pengembangan kemampuan software teknik.
+              </p>
+            </div>
+
+            <div class="certificate-footer">
+              <span>
+                <i data-feather="check-circle"></i>
+                Certified Skill
+              </span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===================================================
+         CONTACT
+    ==================================================== -->
+
+      <section id="contact" class="contact-section">
+        <div class="contact-glow"></div>
+
+        <div class="contact-content reveal">
+          <span class="section-label"> 05 / GET IN TOUCH </span>
+
+          <h2>
+            Mari terhubung dan
+            <span>berkolaborasi.</span>
+          </h2>
+
+          <p>
+            Terbuka untuk peluang karir, kolaborasi, maupun posisi profesional
+            di bidang Teknik Sipil.
           </p>
-          <ul class="contact-list">
-            <li><i data-feather="mail"></i> whenyarsi@gmail.com[cite: 1]</li>
-            <li><i data-feather="phone"></i> 085668994970[cite: 1]</li>
-            <li><i data-feather="map-pin"></i> Jombang, Jawa Timur[cite: 1]</li>
-          </ul>
+
+          <div class="contact-buttons">
+            <a href="mailto:whenyarsi@gmail.com" class="primary-btn">
+              <i data-feather="mail"></i>
+              <span>Kirim Email</span>
+            </a>
+
+            <a href="tel:085668994970" class="secondary-btn">
+              <i data-feather="phone"></i>
+              <span>0856 6899 4970</span>
+            </a>
+          </div>
+
+          <div class="contact-location">
+            <i data-feather="map-pin"></i>
+
+            <span> Jombang, Jawa Timur </span>
+          </div>
         </div>
       </section>
     </main>
 
-    <!-- FOOTER -->
+    <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
     <footer>
-      <p>&copy; 2026 Wheny Arsi Ningrum. All Rights Reserved.</p>
+      <div class="footer-inner">
+        <div class="footer-logo">WA</div>
+
+        <div>
+          <strong> Wheny Arsi Ningrum </strong>
+
+          <span> Civil Engineering Portfolio </span>
+        </div>
+
+        <p>© 2026 Wheny Arsi Ningrum. All Rights Reserved.</p>
+      </div>
     </footer>
+
+    <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
 
     <script src="script.js"></script>
   </body>
